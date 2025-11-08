@@ -46,12 +46,12 @@
       </div>
       <div class="b1">
         <section><img src="images\OUD_LTMGameVMSU_2024_0276_1000px.jpg"
-            alt="A student waves a giant Michigan flag at a football game."></section>
+            alt="A student waves a giant Michigan flag at a football game." onclick="openModal();currentSlide(1)" class="hover-shadow"></section>
       </div>
       <div class="b2">
         <section>
           <img src="images\UMSI_MastersOrientation_081825_06_1000px.png"
-            alt="A group of students work together on a project at UMSI orientation.">
+            alt="A group of students work together on a project at UMSI orientation." onclick="openModal();currentSlide(2)" class="hover-shadow">
         </section>
       </div>
       <div class="c1">
@@ -91,11 +91,11 @@
       </div>
       <div class="d1">
         <section><img src="images\UMSI_AutomotiveUXClass_091222_01_1000px.png"
-            alt="UMSI professor gives a lecture in a classroom." </section>
+            alt="UMSI professor gives a lecture in a classroom." onclick="openModal();currentSlide(3)" class="hover-shadow"></section>
       </div>
       <div class="d2">
         <section><img src="images\UMSI_LibertyMural_Fall2020_002_1000px.png"
-            alt="A mural on Liberty Street in downtown Ann Arbor."></section>
+            alt="A mural on Liberty Street in downtown Ann Arbor." onclick="openModal();currentSlide(4)" class="hover-shadow"></section>
       </div>
       <div class="e1">
         <section>
@@ -121,6 +121,65 @@
       </div>
     </div>
 
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images\OUD_LTMGameVMSU_2024_0276_1000px.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images\UMSI_MastersOrientation_081825_06_1000px.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images\UMSI_AutomotiveUXClass_091222_01_1000px.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images\UMSI_LibertyMural_Fall2020_002_1000px.png" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="images\OUD_LTMGameVMSU_2024_0276_1000px.jpg"
+            alt="A student waves a giant Michigan flag at a football game." onclick="currentSlide(1)">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images\UMSI_MastersOrientation_081825_06_1000px.png"
+            alt="A group of students work together on a project at UMSI orientation." onclick="currentSlide(2)">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images\UMSI_AutomotiveUXClass_091222_01_1000px.png"
+            alt="UMSI professor gives a lecture in a classroom."
+            onclick="currentSlide(3)">
+        </div>
+        <div class="column">
+          <img class="demo" src="images\UMSI_LibertyMural_Fall2020_002_1000px.png"
+            alt="A mural on Liberty Street in downtown Ann Arbor."
+            onclick="currentSlide(4)">
+        </div>
+
+      </div>
+    </div>
+
     <!-- Content taken & modified from UMGPT with the prompt, "What are networking and connections?": and then pasted in the client objectives & project requirements"
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
 
@@ -133,8 +192,7 @@
         href="https://umich.instructure.com/courses/137916" target="_blank">UMSI CDO </a></p>
   </footer>
 </body>
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+
+<script src="js/script.js"></script>
 
 </html>

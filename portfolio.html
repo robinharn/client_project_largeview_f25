@@ -41,13 +41,13 @@
       </div>
       <div class="b1">
         <section>
-          <img src="images\UMSI_TamRayan_06292024_008_0.jpg" alt="A recent UMSI graduate." height="315" width="560">
+          <img src="images\UMSI_TamRayan_06292024_008_0.jpg" alt="A recent UMSI graduate." height="315" width="560" onclick="openModal();currentSlide(3)" class="hover-shadow">
         </section>
       </div>
       <div class="b2">
         <section>
           <img src="images\Commencement2019_01.jpg" alt="A UMSI student celebrates at graduation." height="315"
-            width="560">
+            width="560" onclick="openModal();currentSlide(4)" class="hover-shadow">
         </section>
       </div>
       <div class="c1">
@@ -76,6 +76,60 @@
         </section>
       </div>
     </div>
+
+    <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images\UMSI_MastersOrientation_081825_18_1000px.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images\UMSI_CareerFair2020_07_1000px.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images\UMSI_TamRayan_06292024_008_0.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images\Commencement2019_01.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="images\UMSI_MastersOrientation_081825_18_1000px.jpg" alt="Students gather outside the classroom."  onclick="currentSlide(1)">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images\UMSI_CareerFair2020_07_1000px.png" alt="UMSI students pose in front of a banner." onclick="currentSlide(2)">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images\UMSI_TamRayan_06292024_008_0.jpg" alt="A recent UMSI graduate." onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo" src="images\Commencement2019_01.jpg" alt="A UMSI student celebrates at graduation." onclick="currentSlide(4)">
+    </div>
+
+  </div>
+</div>
+
     <!-- Images taken from https://www.si.umich.edu/about-umsi/fast-facts, https://www.si.umich.edu/people/faces-umsi/phd-information-students, https://www.si.umich.edu/people/alumni-snapshots -->
 
     <!-- Content taken & modified from this CDO Canvas Modules page:
@@ -86,8 +140,7 @@
         href="https://umich.instructure.com/courses/137916" target="_blank">UMSI CDO </a></p>
   </footer>
 </body>
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+
+<script src="js/script.js"></script>
 
 </html>

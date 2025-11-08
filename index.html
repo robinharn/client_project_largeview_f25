@@ -41,12 +41,12 @@
       </div>
       <div class="b1">
         <section>
-          <img src="images\UMSI_MastersOrientation_081825_18_1000px.jpg" alt="Students gather outside the classroom.">
+          <img src="images\UMSI_MastersOrientation_081825_18_1000px.jpg" alt="Students gather outside the classroom." onclick="openModal();currentSlide(1)" class="hover-shadow">
         </section>
       </div>
       <div class="b2">
         <section>
-          <img src="images\UMSI_CareerFair2020_07_1000px.png" alt="UMSI students pose in front of a banner.">
+          <img src="images\UMSI_CareerFair2020_07_1000px.png" alt="UMSI students pose in front of a banner." onclick="openModal();currentSlide(2)" class="hover-shadow">
         </section>
       </div>
       <div class="c1">
@@ -126,6 +126,59 @@
       </div>
     </div>
 
+    <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images\UMSI_MastersOrientation_081825_18_1000px.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images\UMSI_CareerFair2020_07_1000px.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images\UMSI_TamRayan_06292024_008_0.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images\Commencement2019_01.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="images\UMSI_MastersOrientation_081825_18_1000px.jpg" alt="Students gather outside the classroom."  onclick="currentSlide(1)">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images\UMSI_CareerFair2020_07_1000px.png" alt="UMSI students pose in front of a banner." onclick="currentSlide(2)">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images\UMSI_TamRayan_06292024_008_0.jpg" alt="A recent UMSI graduate." onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo" src="images\Commencement2019_01.jpg" alt="A UMSI student celebrates at graduation." onclick="currentSlide(4)">
+    </div>
+
+  </div>
+</div>
+
     <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
   </main>
@@ -134,8 +187,7 @@
         href="https://umich.instructure.com/courses/137916" target="_blank">UMSI CDO </a></p>
   </footer>
 </body>
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+
+<script src="js/script.js"></script>
 
 </html>

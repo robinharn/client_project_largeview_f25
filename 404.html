@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div><a href="#main" class="skip" tabindex="0">Skip to Main Content</a></div>
+    <header>
+        <img src="images/UMSI_sig-marketing-U.png" alt="UMSI Logo">
+        <nav>
+            <div class="grid-nav">
+                <div class="link1"><a href="index.html">Home</a></div>
+                <div class="link2"><a href="resume.html">Resumes</a></div>
+                <div class="link3"><a href="networking.html">Networking & Connections</a></div>
+                <div class="link4"><a href="portfolio.html">Portfolios</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="frown">
+            <img src="images/frown_face.png" class="frowney" alt="A frowning face appears.">
+        </div>
+        <div class="grid-content">
+            <div class="errorpage">
+                <section>
+                    <h1>404 - Page not found</h1>
+                    <p>The page you're looking for doesn't exist, or another error occurred.</p>
+                    <p><a href="index.html">Go back to the homepage</a> to choose a new direction.</p>
+                </section>
+            </div>
+        </div>
+        <!-- Frowney face image is taken from Freepik (https://www.freepik.com/icon/smiley_7471252) and is used freely under the Freepik license. -->
+    </main>
+    <footer>
+        <p>© Copyright <span id="year"></span> University of Michigan School of Information | <a
+                href="https://umich.instructure.com/courses/137916" target="_blank">UMSI CDO </a></p>
+    </footer>
+</body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+</html>

@@ -1,0 +1,289 @@
+
+.grid-content {
+    /* General Style */
+    background-color: #00274C;
+    background-image: url('../images/background.jpg');
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #00274C;
+    border-radius: 7px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+
+    /* Grid Stuff */
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.grid-content>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px;
+    border: 1px solid silver;
+    font-size: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+    font-size: 180%;
+    font-weight: bold;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+a {
+    color: #00274C;
+}
+
+a:visited {
+    color: #2F65A7
+}
+
+a:hover {
+    color: black;
+}
+
+a.standout:link,
+a.standout:visited {
+    background-color: #FFCB05;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+a.standout:hover,
+a.standout:active {
+    background-color: #e2b501;
+}
+
+iframe {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+ul,
+li {
+    font-size: 18px;
+    text-align: left;
+    list-style-type: square;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.skip {
+    position: absolute;
+    top: -42px;
+    left: 0;
+    background: #ffffff;
+    color: #333333;
+}
+
+.skip:focus {
+    top: 42px;
+}
+
+.grid-nav {
+    /* General Style */
+    background-color: #dddddd;
+    background-image: url('../images/background.jpg');
+    padding: 15px;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    font-size: 150%;
+    font-weight:bold;
+    border: 1px solid #00274C;
+    border-radius: 7px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+
+    /* Grid Stuff */
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-nav>div {
+    padding: 5px;
+}
+
+.active {
+    background-color: #FFCB05;
+    border: 3px dashed black;
+    border-radius: 7px;
+}
+
+.link1 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+    max-height: 50px;
+}
+
+.link2 {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 3;
+    max-height: 50px;
+}
+
+.link3 {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 3;
+    max-height: 50px;
+}
+
+.link4 {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 3;
+    max-height: 50px;
+}
+
+.a1 {
+    /* Span the entire first row  */
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+}
+
+.b1 {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.b2 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.c1 {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.c2 {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.d1 {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.d2 {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.e1 {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.e2 {
+    grid-row: 5 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.errorpage {
+    grid-column: 1 / -1;
+}
+
+.frowney {
+    max-height: 200px;
+    width: auto;
+}
+
+@media (min-width: 750px) {
+    .grid-content {
+        /* General Style */
+    background-color: #00274C;
+    background-image: url('../images/background.jpg');
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+        font-size: 18px;
+        border: 1px solid black;
+        border-radius: 7px;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+
+        /* Grid Stuff */
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: hidden;
+    }
+
+    .a1 {
+        /* Span the entire first row  */
+        grid-row: 1 / -1;
+        grid-column: 1 / span 3;
+    }
+
+    .b1 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / -1;
+    }
+
+    .b2 {
+        grid-row: 3 / span 1;
+        grid-column: 1 / -1;
+    }
+
+    .c1 {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    .c2 {
+        grid-row: 4 / span 1;
+        grid-column: 2 / -1;
+    }
+
+    .d1 {
+        grid-row: 5 / span 1;
+        grid-column: 1 / -1;
+    }
+
+    .d2 {
+        grid-row: 6 / span 1;
+        grid-column: 1 / -1;
+    }
+
+    .e1 {
+        grid-row: 7 / span 1;
+        grid-column: 1 / 1;
+    }
+
+    .e2 {
+        grid-row: 7 / span 1;
+        grid-column: 2 / -1;
+    }
+}
